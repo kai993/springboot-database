@@ -19,6 +19,10 @@ public class Tbl1Service {
         this.mapper = mapper;
     }
 
+    /**
+     * データベースから全データを取得する
+     * @return 全データのリスト
+     */
     public List<Tbl1Dto> getAllData() {
         return repository.findAll().stream()
                 .map(mapper::toDto)
