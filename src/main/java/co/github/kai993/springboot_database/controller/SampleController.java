@@ -20,7 +20,9 @@ public class SampleController {
 
     /**
      * サンプルデータを取得するエンドポイント
-     * @return サンプルメッセージを文字列として返します。
+     * データベースから取得したサンプルデータのリストを返却します。
+     *
+     * @return サンプルデータのリスト(Tbl1Dtoオブジェクトのリスト)
      */
     @GetMapping
     public List<Tbl1Dto> getData() {
